@@ -1,0 +1,198 @@
+.frameChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-5xs);
+    background-color: var(--grey-white);
+    width: 840px;
+    height: 542px;
+  }
+  .addYourListing {
+    position: absolute;
+    top: 2px;
+    left: 56px;
+    font-weight: 600;
+  }
+  .addIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .addYourListingParent {
+    position: absolute;
+    top: 40px;
+    left: 293px;
+    width: 253px;
+    height: 40px;
+    font-size: var(--font-size-5xl);
+  }
+  .frameItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-5xs);
+    background-color: var(--grey-white);
+    border: 2px solid var(--purple-1);
+    box-sizing: border-box;
+    width: 360px;
+    height: 175px;
+  }
+  .anIndividualOr {
+    position: absolute;
+    top: 88px;
+    left: 16px;
+    white-space: pre-wrap;
+    display: inline-block;
+    width: 328px;
+  }
+  .people {
+    position: absolute;
+    top: 5px;
+    left: 48px;
+    font-weight: 600;
+  }
+  .groupWrapper,
+  .groupsBlack24dp11Parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 117px;
+    height: 40px;
+  }
+  .groupWrapper {
+    top: 24px;
+    left: 16px;
+    font-size: var(--font-size-xl);
+  }
+  .frameInner,
+  .rectangleGroup {
+    position: absolute;
+    top: 112px;
+    left: 40px;
+    width: 360px;
+    height: 175px;
+  }
+  .frameInner {
+    top: 0;
+    left: 0;
+    border-radius: var(--br-5xs);
+    background-color: var(--grey-white);
+    border: 2px solid var(--red);
+    box-sizing: border-box;
+  }
+  .basketCartEcommerceShoppingParent,
+  .groupContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 128px;
+    height: 40px;
+  }
+  .groupContainer {
+    top: 24px;
+    left: 16px;
+    font-size: var(--font-size-xl);
+  }
+  .rectangleContainer,
+  .rectangleDiv {
+    position: absolute;
+    top: 327px;
+    left: 40px;
+    width: 360px;
+    height: 175px;
+  }
+  .rectangleDiv {
+    top: 0;
+    left: 0;
+    border-radius: var(--br-5xs);
+    background-color: var(--grey-white);
+    border: 2px solid var(--green);
+    box-sizing: border-box;
+  }
+  .groupFrame,
+  .locationOnBlack24dp1Parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 104px;
+    height: 40px;
+  }
+  .groupFrame {
+    top: 24px;
+    left: 16px;
+    font-size: var(--font-size-xl);
+  }
+  .frameChild1,
+  .frameDiv {
+    position: absolute;
+    top: 112px;
+    left: 440px;
+    width: 360px;
+    height: 175px;
+  }
+  .frameChild1 {
+    top: 0;
+    left: 0;
+    border-radius: var(--br-5xs);
+    background-color: var(--grey-white);
+    border: 2px solid var(--blue-1);
+    box-sizing: border-box;
+  }
+  .people1 {
+    position: absolute;
+    top: 44px;
+    left: -7px;
+    font-weight: 600;
+    display: none;
+  }
+  .programParent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .program {
+    position: absolute;
+    top: 5px;
+    left: 48px;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--grey-darkest);
+  }
+  .groupDiv,
+  .groupParent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 138px;
+    height: 40px;
+  }
+  .groupDiv {
+    top: 24px;
+    left: 16px;
+    font-size: var(--font-size-base);
+    color: var(--grey-white);
+  }
+  .rectangleParent,
+  .rectangleParent1 {
+    position: absolute;
+    top: 327px;
+    left: 440px;
+    width: 360px;
+    height: 175px;
+  }
+  .rectangleParent {
+    top: 104px;
+    left: 200px;
+    width: 840px;
+    height: 542px;
+    text-align: left;
+    font-size: var(--font-size-sm);
+    color: var(--grey-darkest);
+    font-family: var(--font-poppins);
+  }
+  

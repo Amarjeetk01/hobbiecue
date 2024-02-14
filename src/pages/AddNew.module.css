@@ -1,0 +1,14 @@
+.rectangleParent {
+  top: 104px;
+  width: 80vw;
+  height: 542px;
+  font-size: var(--font-size-sm);
+  color: var(--grey-darkest);
+  font-family: var(--font-poppins);
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

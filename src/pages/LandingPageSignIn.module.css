@@ -1,0 +1,15 @@
+.connectButton,
+.landingPageSignIn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.connectButton {
+  align-self: stretch;
+  max-width: 100%;
+}
+.landingPageSignIn {
+  background-color: var(--grey-white);
+  letter-spacing: normal;
+}
