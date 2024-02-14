@@ -252,7 +252,7 @@
   padding: 0 0 var(--padding-7xs);
   top: 0;
   z-index: 99;
-  position: sticky;
+  /* position: sticky; */
 }
 @media screen and (max-width: 750px) {
   .shoppingBasket {

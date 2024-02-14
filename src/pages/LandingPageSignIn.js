@@ -10,7 +10,6 @@ import styles from "./LandingPageSignIn.module.css";
 const LandingPageSignIn = () => {
   return (
     <div className="container-fluid">
-      {/* <FindTeacherCoach className={`${styles.landingPageSignIn}position-fixed w-100`} /> */}
       <FindTeacherCoach />
       <main className={styles.connectButton}>
         <BasketContainer />
