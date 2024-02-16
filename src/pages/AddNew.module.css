@@ -1,14 +1,111 @@
-.rectangleParent {
-  top: 104px;
-  width: 80vw;
-  height: 542px;
+.mainContainer {
   font-size: var(--font-size-sm);
   color: var(--grey-darkest);
   font-family: var(--font-poppins);
-}
-
-.mainContainer {
+  /* width: 80vw; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5vw;
 }
+
+.frameContainer {
+  box-sizing: border-box;
+  font-size: var(--font-size-5xl);
+  color: var(--base-black);
+  font-family: var(--text-sm-bold);
+  display: flex;
+  flex-wrap: wrap; 
+  gap: var(--gap-5xl);
+  align-self: center; /* Aligning at the middle vertically */
+}
+.frame {
+  flex-basis: calc(50% - var(--gap-5xl) / 2); /* Two items in a row */
+  border-radius: var(--br-5xs);
+  background-color: var(--grey-white);
+  border: 1px solid var(--grey-light);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-21xl);
+  gap: var(--gap-13xl);
+  min-height: 300px;
+  min-width: 450px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.featureIcon {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.title {
+  margin: 0;
+  height: 36px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+
+.description {
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+  white-space: pre-wrap;
+}
+
+.button {
+  white-space: nowrap;
+  /* z-index: 1; */
+  width: fit-content;
+}
+
+/* Add these hover styles for FeatureContainer */
+.frameContainer > .frame:nth-child(1):hover {
+  background-color: #8064A2;
+}
+
+.frameContainer > .frame:nth-child(2):hover {
+  background-color: #77933C;
+}
+
+.frameContainer > .frame:nth-child(3):hover {
+  background-color: #C0504D;
+}
+
+.frameContainer > .frame:nth-child(4):hover {
+  background-color: #0096C8;
+}
+
+/* Change text color to white on hover */
+.frameContainer > .frame:hover .heading,
+.frameContainer > .frame:hover .featureIcon,
+.frameContainer > .frame:hover .description {
+  color: white;
+}
+
+
+@media screen and (max-width: 1051px) {
+  .frame {
+    flex-basis: 100%; 
+    max-width: 100%; 
+  }
+  .button{
+    width: 100%;
+  }
+}
+

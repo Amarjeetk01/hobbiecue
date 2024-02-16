@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "./BasketContainer.module.css";
 import { Form, Button } from "react-bootstrap";
 
-const Auth = ({ styles }) => {
+const Auth = ({ styles, handleSignInClick }) => {
   const [activeTab, setActiveTab] = useState("SignIn");
+
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -31,9 +31,9 @@ const Auth = ({ styles }) => {
         </div>
       </div>
       <Button
-        className={`${styles.buttons} ${styles.btnSign} ${styles.continueButton}`}
+        className={`${styles.loginWithOtherAccounts1} ${styles.btnSign}`}
         variant="outline-info"
-        href="#"
+        onClick={handleSignInClick}
       >
         Continue
       </Button>
@@ -48,14 +48,15 @@ const Auth = ({ styles }) => {
         <span className={styles.privacy}>Privacy Policy</span>
       </div>
       <Button
-        className={`${styles.buttons} ${styles.btnJoin} ${styles.continueButton}`}
+        className={`${styles.loginWithOtherAccounts1} ${styles.btnJoin}`}
         variant="outline-info"
-        href="#"
+        onClick={handleSignInClick}
       >
         Agree and Continue
       </Button>
     </div>
   );
+
 
   return (
     <div className={styles.audioFrame}>
@@ -98,12 +99,14 @@ const Auth = ({ styles }) => {
             className={`${styles.loginWithOtherAccounts} ${styles.btnSign}`}
             name="Continue with Google"
             variant="outline-primary"
+            onClick={handleSignInClick}
           >
             Sign with Google
           </Button>
           <Button
             className={`${styles.loginWithOtherAccounts1} ${styles.btnSign}`}
             variant="outline-primary"
+            onClick={handleSignInClick}
           >
             Sign with Facebook
           </Button>
@@ -124,6 +127,7 @@ const Auth = ({ styles }) => {
       </div>
       {activeTab === "SignIn" && renderSignInContent()}
       {activeTab === "JoinIn" && renderJoinInContent()}
+      
     </div>
   );
 };

@@ -1,8 +1,36 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./FindTeacherCoach.module.css";
+import { useState } from "react";
+import styles from "./Header.module.css";
 import { Form, FormControl, Button, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import Auth from "./Auth";
+import authStyle from "./BasketContainer.module.css";
+import { MdClose } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
-const FindTeacherCoach = () => {
+const Header = () => {
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  const navigate=useNavigate()
+
+
+
+  const handleClickOn = () => {
+    setShowAuthModal(true);
+  };
+  const handleClickClose = () => {
+    setShowAuthModal(false);
+  };
+  
+  const handleSignInClick = () => {
+    setIsSignedIn(true);
+    handleClickClose();
+    navigate('/signed')
+  };
+  
+  const handleSignOut = () => {
+    setIsSignedIn(false);
+    handleClickClose();
+    navigate('/')
+  };
   return (
     <div className={styles.findTeacherCoach}>
       <Navbar expand="lg" className={styles.navbar}>
@@ -67,12 +95,29 @@ const FindTeacherCoach = () => {
               <img className={styles.product3Icon} alt="" src="/product-3.svg" />
             </Nav.Link>
             </nav>
-            <Button className={`${styles.signIn} btn btn-outline-info`}>Sign In</Button>
+            {isSignedIn ? (
+              <Button className={`${styles.signIn} btn btn-outline-info`} onClick={handleSignOut}>
+                {/* <img src="/user-icon.svg" alt="User" /> */}
+                Sign Out
+              </Button>
+            ) : (
+              <Button className={`${styles.signIn} btn btn-outline-info`} onClick={handleClickOn}>
+          Sign In
+        </Button>
+            )}
           </Nav>
         </Navbar.Collapse>
+        {showAuthModal && (
+        <div className={styles.popupContainer}>
+          <span className={styles.closeIcon} onClick={handleClickClose}>
+            <MdClose />
+          </span>
+          <Auth styles={authStyle} handleSignInClick={handleSignInClick}/>
+        </div>
+      )}
       </Navbar>
     </div>
   );
 };
 
-export default FindTeacherCoach;
+export default Header;

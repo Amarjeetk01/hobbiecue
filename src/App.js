@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import LandingPageSignIn from "./pages/LandingPageSignIn";
 import AddNew from "./pages/AddNew";
+import Header from "./components/Header";
 
 function App() {
   const action = useNavigationType();
@@ -45,10 +46,15 @@ function App() {
   }, [pathname]);
 
   return (
+    <div className={`container-fluid`}>
+<Header  />
+    
     <Routes>
+    
       <Route path="/" element={<LandingPageSignIn />} />
       <Route path="/signed" element={<AddNew />} />
     </Routes>
+    </div>
   );
 }
 export default App;

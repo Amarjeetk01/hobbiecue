@@ -1,12 +1,24 @@
-.frameChild {
-  width: 1240px;
-  height: 472px;
-  position: relative;
+.testimonials {
+  background-color: var(--grey-white);
+  /* margin: 10px; */
+  font-size: var(--font-size-5xl);
+  color: var(--grey-darkest);
+}
+
+.rectangleParent {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 100%;
   border-radius: var(--br-5xs);
   background-color: var(--purple-3);
-  display: none;
-  max-width: 100%;
+ 
+  justify-content: flex-start;
+  padding: var(--padding-21xl);
+  gap: var(--gap-13xl);
 }
+
+
 .quoteIcon,
 .testimonials1 {
   position: relative;
@@ -27,48 +39,21 @@
   font-family: inherit;
   display: inline-block;
 }
-.emailID,
 .invite {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-}
-.invite {
-  align-items: center;
   gap: var(--gap-5xl);
 }
-.emailID {
-  align-self: stretch;
-  align-items: flex-start;
-}
+
 .inAFast {
-  align-self: stretch;
-  height: 180px;
-  /* position: relative; */
+  font-size: var(--font-size-lg);
+  color: var(--grey-darker);
   letter-spacing: 0.02em;
   line-height: 30px;
   font-weight: 300;
   display: inline-block;
-  z-index: 1;
 }
-.audioTrackChild,
-.frameItem {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.audioTrackChild {
-  border-radius: var(--br-5xs);
-  background-color: var(--purple-2);
-  display: none;
-}
-.frameItem {
-  border-radius: 50%;
-  background-color: var(--grey-white);
-  z-index: 1;
-}
+
 .playArrowBlack24dp1Icon {
   position: relative;
   top: 8px;
@@ -76,132 +61,106 @@
   width: 24px;
   height: 24px;
   overflow: hidden;
-  z-index: 2;
   cursor: pointer;
 }
 .ellipseParent {
   position: relative;
-  top: 30px;
-  left: 32px;
   width: 40px;
   height: 40px;
-}
-.audioTrackInner,
-.audioTrackItem {
-  position: relative;
   border-radius: 50%;
+  background-color: var(--grey-white);
 }
-.audioTrackItem {
-  top: 44px;
-  left: 112px;
-  background-color: var(--primary-full);
-  width: 12px;
-  height: 12px;
-  z-index: 2;
-}
+
 .audioTrackInner {
-  top: 19px;
-  width: 60px;
-  height: 60px;
+  width: 60px; /* Adjust according to your needs */
+  height: 60px; /* Adjust according to your needs */
+  border-radius: 50%;
   object-fit: cover;
-  z-index: 1;
 }
 .micBlack24dp1Icon {
-  position: absolute;
-  top: 47px;
+  position: relative;
   width: 32px;
   height: 32px;
   overflow: hidden;
-  z-index: 2;
+  right: -18%;
+  top: 12px;
 }
-.div,
-.frameInner {
-  position: relative;
-  z-index: 1;
-}
+
 .frameInner {
   height: 2px;
   flex: 1;
   border-radius: var(--br-11xs);
   background-color: var(--grey-white);
-  min-width: 304px;
   max-width: 100%;
 }
 .div {
   line-height: 16px;
 }
 .rectangleGroup {
-  position: relative;
-  top: 42px;
-  left: 118px;
-  width: 503px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xs);
-  max-width: 100%;
+  width: 40vw;
 }
-.audioTrack,
+
 .ellipseIcon {
-  height: 100px;
-  position: relative;
-  z-index: 1;
+  width: 100px; /* Adjust according to your needs */
+  height: 100px; /* Adjust according to your needs */
+  border-radius: 50%;
+  object-fit: cover;
 }
 .audioTrack {
-  flex: 1;
   border-radius: var(--br-5xs);
   background-color: var(--purple-2);
   display: flex;
   flex-wrap: nowrap;
-  min-width: 504px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-5xl);
+  min-width: 60vw;
   max-width: 100%;
+  padding: 10px;
 }
-.ellipseIcon {
-  width: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+
 .classicalDancer,
 .shubhaNagarajan {
-  position: relative;
+  /* position: relative; */
   letter-spacing: 0.02em;
-  z-index: 1;
+  /* z-index: 1; */
 }
 .shubhaNagarajan {
   font-weight: 600;
 }
+
 .classicalDancer {
   height: 21px;
   font-size: var(--text-sm-bold-size);
   color: var(--blue-1);
-  display: inline-block;
 }
-.ellipseGroup,
-.shubhaNagarajanParent {
-  display: flex;
-  justify-content: flex-start;
-}
+
 .shubhaNagarajanParent {
   flex-direction: column;
   align-items: flex-start;
   padding: var(--padding-xl) 0;
   gap: var(--gap-9xs);
 }
+
+.shubhaNagarajan {
+  font-weight: 600;
+}
 .ellipseGroup {
-  flex-direction: row;
+  display: flex;
   align-items: center;
   gap: var(--gap-5xl);
-  min-width: 304px;
+  min-width: 20vw;
+  max-width: 100%;
   font-size: var(--font-size-lg);
 }
-.audioTrackParent,
-.inAFastGrowingAndEverChaParent {
-  /* align-self: stretch; */
+.audioTrackParent {
   display: flex;
-  /* flex-direction: row; */
-  /* align-items: flex-start;
-  justify-content: flex-start; */
+  flex-direction: column;
   gap: var(--gap-61xl);
   max-width: 100%;
   font-size: var(--font-size-xs);
@@ -214,32 +173,33 @@
   font-size: var(--font-size-lg);
   color: var(--grey-darker);
 }
-.rectangleParent,
-.testimonials {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  max-width: 100%;
+
+
+@media screen and (min-width: 768px) {
+  .audioTrackParent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .audioTrack {
+    width: 60vw;
+  }
+
+  .ellipseGroup {
+    order: 2; /* This will ensure the ellipseGroup comes after audioTrack */
+  }
 }
-.rectangleParent {
-  width: 1240px;
-  border-radius: var(--br-5xs);
-  background-color: var(--purple-3);
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: var(--padding-21xl);
-  gap: var(--gap-13xl);
-}
-.testimonials {
-  align-self: stretch;
-  background-color: var(--grey-white);
-  flex-direction: row;
-  justify-content: center;
-  padding: var(--padding-81xl) var(--padding-xl);
-  z-index: 4;
-  margin-top: -33px;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--grey-darkest);
-  font-family: var(--text-sm-bold);
+
+@media screen and (max-width: 767px) {
+  .audioTrackParent {
+    flex-direction: column;
+  }
+  .micBlack24dp1Icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    right: 17%;
+    top: 59px;
+  }
 }

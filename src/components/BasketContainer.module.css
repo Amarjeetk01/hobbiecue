@@ -38,14 +38,12 @@
 .ifYouAre,
 .signInToInteract {
   align-self: stretch;
-  height: 120px;
   font-size: var(--text-sm-bold-size);
   line-height: 30px;
   font-weight: 300;
   color: var(--base-black);
 }
 .ifYouAre {
-  height: 60px;
   white-space: pre-wrap;
 }
 .addField,
@@ -65,19 +63,12 @@
   min-width: 707px;
   max-width: 100%;
 }
-.signIn {
-  width: 69px;
-  height: 30px;
-  left: 0px;
-  top: 0px;
-  /* color: #8064A2; */
-}
 
 .joinIn {
   width: 67px;
   height: 30px;
-  left: 70px;
-  top: 0px;
+  /* left: 70px; */
+  /* top: 0px; */
   /* color: #939CA3; */
 }
 .group195,
@@ -94,7 +85,7 @@
   position: absolute;
   width: 45px;
   height: 2px;
-  left: 0px;
+  /* left: 0px; */
   top: 32px; 
   background: #8064A2;
 }
@@ -333,8 +324,6 @@
   font-size: var(--font-size-xs);
   line-height: 16px;
   color: #6D747A;
-  display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -343,11 +332,6 @@
   color: #6D747A;
   font-weight: 600;
   margin: 0 4px;
-}
-
-.buttons {
-  align-self: stretch;
-  z-index: 1;
 }
 
 
@@ -368,7 +352,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  /* line-height: 16px; */
   color: #FFFFFF;
 }
 
@@ -376,13 +359,15 @@
 
 .addtestimonialquoteframe,
 .shubhaNagarajanframe {
-  width: 410px;
+  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-5xl);
   max-width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .addtestimonialquoteframe {
   width: 1281px;
@@ -486,14 +471,14 @@
 
 @media screen and (max-width: 750px) {
   .addField {
-    gap: var(--gap-5xl); /* Adjust the gap for smaller screens */
+    gap: var(--gap-5xl);
   }
   .frameInfo {
-    flex-direction: column; /* Stack the items vertically on smaller screens */
-    align-items: center; /* Center items on smaller screens */
+    flex-direction: column;
+    align-items: center;
   }
   .ellipseplayarrowblackdp {
-    flex-direction: column; /* Stack the items vertically on smaller screens */
+    flex-direction: column;
   }
   .homeScreen {
     padding-top: var(--padding-46xl);
@@ -507,15 +492,17 @@
   }
   .loginWithOtherAccounts,
   .loginWithOtherAccounts1 {
-    gap: var(--gap-5xl); /* Adjust the gap for smaller screens */
+    gap: var(--gap-5xl); 
   }
   .connectWithSeparator {
-    flex-direction: column; /* Stack the items vertically on smaller screens */
+    flex-direction: column;
   }
   .audioFrame {
-    gap: var(--gap-5xl); /* Adjust the gap for smaller screens */
+    gap: var(--gap-5xl);
   }
   .grouphobbycuefooter {
-    flex-direction: column; /* Stack the items vertically on smaller screens */
+    flex-direction: column; 
+  }.continueButton {
+    width: auto;
   }
 }
